@@ -42,19 +42,23 @@ var lists = [
         "Note" : ""
     }
     ];
-    exports.findAllofList = function() {
-        return lites;
+    indAllofList = function() {
+        return lists;
     };
-    exports.findByFirstname = function (Firstname) {
-        for (var i = 0; i < users.length; i++) {
-            if (lists[i].Firstname ==Firstname) return lists[i];
+    findByFirstname = function (name) {
+        for (var i = 0; i < lists.length; i++) {
+            if (lists[i].Firstname ==name) return lists[i];
         }
     };
-    exports.findByID = function (ID) {
-        for (var i = 0; i < users.length; i++) {
+    findByID = function (ID) {
+        for (var i = 0; i <lists.length; i++) {
             if (lists[i].ID == ID) return ID[i];
         }
     };
-router.get('/lites/:Firstname', (req,res) =>{
-    res.json(findByFirstname(Firstname));
-})
+    router.get('/lites/:name', (req,res) =>{
+        var name = req.params.name;
+        res.json(findByFirstname(name));
+    })
+    router.get('/lites', function (req, res) {
+        res.json(findAllofList());
+    });
