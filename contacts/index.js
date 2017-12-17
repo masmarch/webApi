@@ -1,3 +1,5 @@
+const express = require('express')
+const router = express.Router()
 var lists = [
     {
         "ID" : "0",
@@ -48,3 +50,11 @@ var lists = [
             if (lists[i].Firstname ==Firstname) return lists[i];
         }
     };
+    exports.findByID = function (ID) {
+        for (var i = 0; i < users.length; i++) {
+            if (lists[i].ID == ID) return ID[i];
+        }
+    };
+router.get('/lites/:Firstname', (req,res) =>{
+    res.json(findByFirstname(Firstname));
+})
