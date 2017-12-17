@@ -22,7 +22,7 @@ var lists = [
         "Firstname": "Pongsapak",
         "Lastname": "Rattanaaudomsuk",
         "URL": "https://www.facebook.com/MPongsapak",
-        "Phone" : "0811558446",
+        "Phone" : "081-1558446",
         "Note" : ""
     },
     {
@@ -30,7 +30,7 @@ var lists = [
         "Firstname": "Pongsiri",
         "Lastname": "Suasad",
         "URL": "https://www.facebook.com/akkarapol.suasat",
-        "Phone" : "0613269130",
+        "Phone" : "061-3269130",
         "Note" : ""
     },
     {
@@ -38,7 +38,7 @@ var lists = [
         "Firstname": "Pratchaya",
         "Lastname": "Jutavichit",
         "URL": "https://www.facebook.com/Bterpchy",
-        "Phone" : "0831609631",
+        "Phone" : "083-1609631",
         "Note" : ""
     }
     ];
@@ -52,7 +52,7 @@ var lists = [
     };
     findByID = function (ID) {
         for (var i = 0; i <lists.length; i++) {
-            if (lists[i].ID == ID) return ID[i];
+            if (lists[i].ID == ID) return lists[i];
         }
     };
     router.get('/list/name/:name', (req,res) =>{
