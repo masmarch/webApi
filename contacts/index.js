@@ -59,6 +59,11 @@ var lists = [
         var name = req.params.name;
         res.json(findByFirstname(name));
     })
+    router.get('/lites/:id', (req,res) =>{
+        var id = req.params.id;
+        res.json(findByID(id));
+    })
     router.get('/lites', function (req, res) {
         res.json(findAllofList());
     });
+    module.exports = router
