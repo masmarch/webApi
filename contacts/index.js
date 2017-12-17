@@ -19,26 +19,26 @@ var lists = [
     },
     {
         "ID" : "2",
-        "Firstname": "NongMarch",
-        "Lastname": "songpunsibpad",
+        "Firstname": "Pongsapak",
+        "Lastname": "Rattanaaudomsuk",
         "URL": "https://www.facebook.com/MPongsapak",
-        "Phone" : "",
+        "Phone" : "0811558446",
         "Note" : ""
     },
     {
         "ID" : "3",
-        "Firstname": "NongAut",
-        "Lastname": "Widwew",
+        "Firstname": "Pongsiri",
+        "Lastname": "Suasad",
         "URL": "https://www.facebook.com/akkarapol.suasat",
-        "Phone" : "",
+        "Phone" : "0613269130",
         "Note" : ""
     },
     {
         "ID" : "4",
-        "Firstname": "NongBut",
-        "Lastname": "some body help me",
+        "Firstname": "Pratchaya",
+        "Lastname": "Jutavichit",
         "URL": "https://www.facebook.com/Bterpchy",
-        "Phone" : "",
+        "Phone" : "0831609631",
         "Note" : ""
     }
     ];
@@ -55,15 +55,15 @@ var lists = [
             if (lists[i].ID == ID) return ID[i];
         }
     };
-    router.get('/lites/:name', (req,res) =>{
+    router.get('/list/name/:name', (req,res) =>{
         var name = req.params.name;
         res.json(findByFirstname(name));
     })
-    router.get('/lites/:id', (req,res) =>{
+    router.get('/list/id/:id', (req,res) =>{
         var id = req.params.id;
         res.json(findByID(id));
     })
-    router.get('/lites', function (req, res) {
+    router.get('/list', function (req, res) {
         res.json(findAllofList());
     });
     module.exports = router
