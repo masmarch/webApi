@@ -5,6 +5,7 @@ var lists = [
         "ID": "0",
         "Firstname": "Piyapong",
         "Lastname": "Paikamnam",
+        "Email" : "58160574@go.buu.ac.th",
         "URL": "https://www.facebook.com/piyaphong.paikamnam",
         "Phone": "082-5237431",
         "Note": ""
@@ -13,6 +14,7 @@ var lists = [
         "ID": "1",
         "Firstname": "Nattaphurin",
         "Lastname": "Vichit",
+        "Email" : "58160565@go.buu.ac.th",
         "URL": "https://www.facebook.com/profile.php?id=100003002294477",
         "Phone": "098-9367670",
         "Note": ""
@@ -21,6 +23,7 @@ var lists = [
         "ID": "2",
         "Firstname": "Pongsapak",
         "Lastname": "Rattanaaudomsuk",
+        "Email" : "58160577@go.buu.ac.th",
         "URL": "https://www.facebook.com/MPongsapak",
         "Phone": "081-1558446",
         "Note": ""
@@ -29,6 +32,7 @@ var lists = [
         "ID": "3",
         "Firstname": "Pongsiri",
         "Lastname": "Suasad",
+        "Email" : "58160006@go.buu.ac.th",
         "URL": "https://www.facebook.com/akkarapol.suasat",
         "Phone": "061-3269130",
         "Note": ""
@@ -37,6 +41,7 @@ var lists = [
         "ID": "4",
         "Firstname": "Pratchaya",
         "Lastname": "Jutavichit",
+        "Email" : "58160214@go.buu.ac.th",
         "URL": "https://www.facebook.com/Bterpchy",
         "Phone": "083-1609631",
         "Note": ""
