@@ -1,5 +1,5 @@
 จะเอา ข้อ 1
-ขอด้วยคน
+
 <html>
 <head>
         <link rel="stylesheet" type="text/css" href="css/css7.css">
